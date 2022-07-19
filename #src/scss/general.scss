@@ -79,3 +79,18 @@ $thirdcolor: #776157;
     }
   }
 }
+.dark-link {
+  display: flex;
+  align-items: center;
+  transition: all .2s ease;
+  color: $maincolor;
+  svg {
+    fill: $maincolor;
+  }
+  &:hover {
+    color: $secondcolor;
+    svg {
+      fill: $secondcolor;
+    }
+  }
+}
