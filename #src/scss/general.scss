@@ -1,0 +1,81 @@
+$bp1: 1400.98px;
+$bp2: 1024.98px;
+$bp3: 992.98px;
+$bp4: 767.98px;
+$bp5: 480.98px;
+$maincolor: #664B42;
+$secondcolor: #FD9F32;
+$thirdcolor: #776157;
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: $secondcolor;
+  cursor: pointer;
+  padding: 0 26px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 3;
+  box-shadow: 13px 4px 30px rgba(203, 173, 149, 0.45);
+  border-radius: 6px;
+}
+
+.select-custom {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.3;
+  &__selected {
+    padding: 0 12px 0 0;
+    cursor: pointer;
+    background: url("../img/icons/arrow-drop.svg") right center no-repeat;
+  }
+
+  &__options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  &__option {
+    cursor: pointer
+  }
+  @media (max-width: $bp3) {
+    display: none
+  }
+}
+.link {
+  display: flex;
+  align-items: center;
+  transition: all .2s ease;
+  svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+  }
+}
+.light-link {
+  display: flex;
+  align-items: center;
+  transition: all .2s ease;
+  color: $secondcolor;
+  svg {
+    fill: $secondcolor;
+  }
+  &:hover {
+    color: $maincolor;
+    svg {
+      fill: $maincolor;
+    }
+  }
+}
