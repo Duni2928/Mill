@@ -92,7 +92,7 @@ if (document.querySelector(".nav-footer")) {
   const menuList = document.querySelector(".menu__list");
   const menuIcon = document.querySelector(".icon-menu");
   const menuBody = document.querySelector(".menu");
-  const search = document.querySelector(".search");
+  const search = document.querySelector(".search-btn");
   const menu = document.querySelector(".menu");
   menuIcon.addEventListener("click", (e)=> {
     body.classList.toggle("no-scroll");
