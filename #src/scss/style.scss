@@ -330,13 +330,12 @@ body {
     }
   }
   @media (max-width: 850px) {
-    flex-wrap: wrap;
+    display: block;
     &__preview {
       margin: 0 auto 20px;
     }
     &__content {
       padding: 0;
-      flex: 1 1 100%;
     }
     &__title {
       max-width: none;
@@ -344,8 +343,9 @@ body {
   }
   @media(max-width: $bp5) {
     &__preview {
-      flex: 0 0 auto;
+      width: 100%;
       max-width: 352px;
+      height: auto
     }
     &__content {
       max-width: 352px;

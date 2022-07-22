@@ -1023,17 +1023,13 @@ body {
 }
 @media (max-width: 850px) {
   .about {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: block;
   }
   .about__preview {
     margin: 0 auto 20px;
   }
   .about__content {
     padding: 0;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
   }
   .about__title {
     max-width: none;
@@ -1041,10 +1037,9 @@ body {
 }
 @media (max-width: 480.98px) {
   .about__preview {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    width: 100%;
     max-width: 352px;
+    height: auto;
   }
   .about__content {
     max-width: 352px;
