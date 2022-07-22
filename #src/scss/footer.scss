@@ -1,5 +1,7 @@
 .footer {
   background: url('../img/footer/footer-bg.png') top center repeat-x;
+  position: relative;
+  top: -20px;
   &__container {
     max-width: 1845px;
     padding: 76px 15px 0 60px;
@@ -98,10 +100,6 @@
       margin: 40px 0 10px 0;
      }
   }
-  @media (max-width: $bp3) {
-    position: relative;
-    top: -20px
-   }
 }
 .info-footer {
   &__logo {
