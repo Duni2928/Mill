@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+  <object class="sprite" type="image/svg+xml" data="images/sprite/sprite.svg"></object>  
   <div class="wrapper">
     @@include("_header.html",{})
     <main class="page">
@@ -189,8 +191,10 @@
             </div>
             <div class="detail-production section-production__detail">
               <div class="detail-production__preview">
-                <img class="detail-production__path detail-production__path--purchasing" src="img/production/detail-bg-path.png">
-                <img class="detail-production__image" src="img/production/purchase-section-detail.png" alt="Закупка зерна">
+                <video autoplay muted class="detail-production__video detail-production__video--purchasing">
+                  <source src="media/video.webm" type="video/webm">
+                  <source src="media/video.mp4" type="video/mp4">
+                </video>
               </div>
               <div class="detail-production__content">
                 <div class="detail-production__title">Около 2 000 тонн</div>
@@ -261,8 +265,10 @@
             </div>
             <div class="detail-production detail-production--cleaning section-production__detail">
               <div class="detail-production__preview">
-                <img class="detail-production__path detail-production__path--cleaning" src="img/production/cleaning/detail-path.png">
-                <img class="detail-production__image" src="img/production/cleaning/section-detail.png" alt="Очистка зерна">
+                <video autoplay muted class="detail-production__video detail-production__video--cleaning">
+                  <source src="media/video.webm" type="video/webm">
+                  <source src="media/video.mp4" type="video/mp4">
+                </video>
               </div>
               <div class="detail-production__content detail-production__content--cleaning">
                 <div class="detail-production__title">Три производственные линии</div>

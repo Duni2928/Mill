@@ -51,6 +51,13 @@ if (document.querySelector(".select-custom")) {
 if (document.querySelector(".slider-intro")) {
   const mainslider = new Swiper(".slider-intro", {
     slidesPerView: 1,
+    loop: true,
+    speed: 800,
+    autoplay: {
+      delay: 2000,
+      pauseOnMouseEnter: true,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
